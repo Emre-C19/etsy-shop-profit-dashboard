@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "etsy-shop-profit-dashboard"
+version = "0.1.0"
+description = "Personal, read-only profit reporting for a single Etsy shop."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+etsy-profit = "etsy_profit.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

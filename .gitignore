@@ -1,0 +1,14 @@
+# Secrets and tokens
+.env
+*.token.json
+
+# Synced shop data never goes into the repository
+data/
+*.csv
+exports/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
